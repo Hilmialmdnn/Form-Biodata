@@ -1,0 +1,25 @@
+:root{--bg:#f7f8fb;--card:#fff;--text:#1c2333;--muted:#5c667a;--accent:#2563eb;--accent-text:#fff;--line:#e3e7ef;--wa:#16a34a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1420;--card:#171e2e;--text:#e8ecf5;--muted:#9aa5bb;--accent:#60a5fa;--accent-text:#0b1220;--line:#27314a;--wa:#22c55e}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h2{font-size:1.5rem;margin:0 0 20px}
+.hero{text-align:center;padding:64px 0 48px}
+.avatar{width:150px;height:150px;border-radius:50%;margin:0 auto 20px;border:4px solid var(--accent);background:var(--card);display:flex;align-items:center;justify-content:center;font-size:3rem;font-weight:700;color:var(--accent);overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.hero h1{margin:0;font-size:clamp(1.8rem,5vw,2.6rem)}
+.role{color:var(--accent);font-weight:600;margin:6px 0 14px}
+.hero p{max-width:540px;margin:0 auto;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.tag{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:.92rem}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.cta{text-align:center;border-top:1px solid var(--line)}
+.cta p{color:var(--muted);max-width:480px;margin:0 auto 24px}
+.btn{display:inline-block;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;font-size:1.1rem;padding:16px 34px;border-radius:999px;box-shadow:0 6px 18px rgba(22,163,74,.35);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0 32px}

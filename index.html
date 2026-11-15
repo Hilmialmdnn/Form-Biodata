@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM BIODATA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Profil Saya | Backend Developer</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
-    <div class="container mt-5">
-        <div class="card p-4" style="background-color: #f8d7ba;">
-            <h4 class="text-center fw-bold">FORM BIODATA</h4>
-            <form>
-                <div class="mb-3">
-                    <label class="fw-bold">Nama:</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label class="fw-bold">Deskripsi Diri:</label>
-                    <textarea class="form-control" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label class="fw-bold">Jenis Kelamin:</label><br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="male" value="Laki-laki">
-                        <label class="form-check-label" for="male">Laki-laki</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="female" value="Perempuan">
-                        <label class="form-check-label" for="female">Perempuan</label>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="fw-bold">Negara:</label>
-                    <select class="form-select">
-                        <option>Indonesia</option>
-                        <option>Malaysia</option>
-                        <option>Singapura</option>
-                        <option>Korea</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label class="fw-bold">Upload Foto:</label>
-                    <input type="file" class="form-control">
-                </div>
-                <div class="d-grid gap-2">
-                    <button type="submit" class="btn text-white" style="background-color: #6D6875;">Simpan</button>
-                    <button type="reset" class="btn btn-light border">Reset</button>
-                </div>
-            </form>
-        </div>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <!-- Ganti isi div ini dengan: <img src="foto.jpg" alt="Foto profil"> jika sudah ada foto -->
+    <div class="avatar" aria-label="Foto profil">NL</div>
+    <h1>Nama Lengkap Anda</h1>
+    <div class="role">Backend Developer Enthusiast</div>
+    <p>Mahasiswa dan intern backend developer yang suka membangun aplikasi web yang rapi, aman, dan bermanfaat bagi pengguna.</p>
+  </div>
+</header>
+
+<section id="tentang">
+  <div class="wrap">
+    <h2>Tentang Saya</h2>
+    <div class="card">
+      <p>Saya mahasiswa semester 5 yang berfokus pada pengembangan web dan keamanan siber. Saat ini saya magang sebagai backend developer di PT Rekaindo Global Jasa, tempat saya membangun aplikasi manajemen proyek berbasis Laravel. Di luar kuliah, saya tertarik pada infrastruktur cloud, analisis data, dan membangun produk digital yang bisa dipakai nyata.</p>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+</section>
+
+<section id="keahlian">
+  <div class="wrap">
+    <h2>Keahlian &amp; Portofolio</h2>
+    <div class="tags">
+      <span class="tag">Laravel / PHP</span>
+      <span class="tag">Backend Development</span>
+      <span class="tag">Database</span>
+      <span class="tag">Cloud (Proxmox VE)</span>
+      <span class="tag">Keamanan Siber (Wazuh)</span>
+      <span class="tag">Data Science (Python)</span>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Atur</h3><p>Aplikasi web manajemen proyek berbasis Laravel yang dikembangkan selama magang.</p></div>
+      <div class="card"><h3>Zaitun Cafe</h3><p>Aplikasi reservasi, menu, dan promo kafe. Proyek kelompok dengan desain di Figma.</p></div>
+      <div class="card"><h3>CyberLab</h3><p>Proyek pengamanan infrastruktur dengan Wazuh dan analisis log.</p></div>
+      <div class="card"><h3>Cloud Computing</h3><p>Praktikum clone VM dan clustering menggunakan Proxmox VE.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="kontak" class="cta">
+  <div class="wrap">
+    <h2>Mari Berkolaborasi</h2>
+    <p>Punya proyek, pertanyaan, atau ingin berdiskusi? Kirim pesan langsung ke WhatsApp saya.</p>
+    <!-- Ganti 6281234567890 dengan nomor Anda: kode negara 62, tanpa 0 di depan, tanpa spasi/tanda + -->
+    <a class="btn" href="https://wa.me/6281234567890?text=Halo%2C%20saya%20melihat%20landing%20page%20Anda%20dan%20ingin%20berdiskusi." target="_blank" rel="noopener">Hubungi Saya via WhatsApp</a>
+  </div>
+</section>
+
+<footer>&copy; 2026 Nama Lengkap Anda</footer>
+
 </body>
 </html>
